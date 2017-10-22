@@ -1,0 +1,20 @@
+commit 8860f7b1a3342fa555807c2d5ba7949a279fdfbb
+Merge: 311bf6b 61bc8fd
+Author: T money mo mula <tmula@localhost.localdomain>
+Date:   Tue Oct 10 11:25:48 2017 -0700
+
+    Merge branch 'master' of https://github.com/tbridges99/UberSimulator
+    
+    Keep consistency.
+
+commit 311bf6b5f4931208a6d615a00b3605db47fbc719
+Author: T money mo mula <tmula@localhost.localdomain>
+Date:   Tue Oct 10 11:21:34 2017 -0700
+
+    First Commit of prototype UberSimulation
+
+commit 61bc8fd55167449acd59676ab40978ffa8a7254a
+Author: tbridges99 <tbridges99@gmail.com>
+Date:   Tue Oct 10 11:18:29 2017 -0700
+
+    Initial commit

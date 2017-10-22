@@ -5,7 +5,7 @@ public class Driver {
 	private String cartitle;
 	private int[][] coordinates;
 	private String status;
-	private Rating rating;
+	private float rating;
 	public Driver(String name, float balance, String cartitle, int[] coordinatesX, int[] coordinatesY) {
 		this.name = name;
 		this.balance = balance;
@@ -19,22 +19,32 @@ public class Driver {
  	}
 	
 	public boolean acceptRequest() {
-		return true;
+		if (status.equals("available"))
+			return true;
+		else 
+			return false;
 	}
 	
 	public void addbalance(float fare) {
-		
+		balance += fare;
 	}
 	
 	public void changeStatus() {
-		
+		if (status.equals("available")){
+			status = "occupied";
+		}
+		else 
+			status = "available";	
 	}
 	
-	public void changeLocation() {
-		
+	public void changeLocation(int coordinateX1, int coordinateY1, int coordinateX2, int coordinateY2) {
+		coordinates[0][0] = coordinateX1;
+		coordinates[1][0] = coordinateX2;
+		coordinates[0][1] = coordinateY1;
+		coordinates[1][1] = coordinateY2;
 	}
 	
-	public void CalcRating(Rating newRating) {
+	public void CalcRating(float newRating) {
 		
 	}
 }
