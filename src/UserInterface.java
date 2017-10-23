@@ -9,9 +9,25 @@ public class UserInterface {
 	final int GRIDYMIN = 0;
 	
 	public UserInterface(ArrayList<Driver> Drivers, ArrayList<Passenger> Passengers, int gridSizeX, int gridSizeY) {
-		drivers = Drivers;
-		passengers = Passengers;
+		setDrivers(Drivers);
+		setPassengers(Passengers);
 		grid = new Grid(GRIDXMIN, gridSizeX, GRIDYMIN, gridSizeY);
+	}
+
+	public ArrayList<Driver> getDrivers() {
+		return drivers;
+	}
+
+	public void setDrivers(ArrayList<Driver> drivers) {
+		this.drivers = drivers;
+	}
+
+	public ArrayList<Passenger> getPassengers() {
+		return passengers;
+	}
+
+	public void setPassengers(ArrayList<Passenger> passengers) {
+		this.passengers = passengers;
 	}
 	
 	
